@@ -1,7 +1,8 @@
 //03-11-2020
 
 //----AGREGAR DATOS(C)
-const user = new User("GN2", "abrilyepezgranados@gmail", "contraseñax2");
+const user = new User("ALDA", "alda@gmail", "123alda");
+
 
 function createUser(user){
     //ADD te pondrá un id predeterminado
@@ -62,6 +63,7 @@ function updatePassword({nickName, newPassword}){
 function deleteUser({nickName}){
     //DELETE: Eliminará todos los documentos y subdocumentos del mismo
     db.collection('users').doc(nickName).delete();
+    console.log("Elemento borrado");
 }
 
 
